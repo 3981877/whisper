@@ -1,3 +1,41 @@
+## AI技术语音转文字翻译转写语音识别Whisper AI
+- 如何使用Google Colaboratory部署使用Whisper, Google Colab是一个完全免费的python程序运行应用，我们通过浏览器就能免费使用google 提供的高算力gpu和tpu，无需任何环境配置，运行大部分的人工智能软件应用。
+
+## 首先打开google云盘左上角有一个新建--更多--关联更多应用--搜索：Google Colaboratory 安装。
+
+Colab Whisper 代码：
+
+``
+!pip install git+https://github.com/openai/whisper.git
+``
+
+``
+!sudo apt update && sudo apt install ffmpeg
+``
+
+运行代码：
+
+``
+!whisper "文件名（需要替换）.mp3" --model medium
+``
+
+语音识别后，直接翻译为英文： 
+
+``
+!whisper "文件名（需要替换）.mp3" --model medium --task translate
+``
+
+使用最新的Whisper v3模型
+
+``
+!whisper "文件名（需要替换）.mp3" --model large-v3
+``
+## 演示图
+![3](https://github.com/3981877/whisper/assets/60610978/40782c62-f755-4b52-9321-0769f9685feb)
+![1](https://github.com/3981877/whisper/assets/60610978/5b974e6c-fe2b-4d42-b0d4-44e8a610c6a3)
+![2](https://github.com/3981877/whisper/assets/60610978/b2f7f859-b174-48a7-ba90-734a2c1c71e9)
+
+
 # Whisper
 
 [[Blog]](https://openai.com/blog/whisper)
